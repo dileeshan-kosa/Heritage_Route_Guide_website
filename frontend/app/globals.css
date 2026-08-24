@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --primary: #111827;
+  --primary-light: #374151;
+  --accent-clay: #4b5563;
+  --accent-gold: #b45309;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-clay: var(--accent-clay);
+  --color-gold: var(--accent-gold);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background: #090e0b;
+  --foreground: #ecf3ed;
+  --primary: #1b5332;
+  --primary-light: #287a4a;
+  --accent-clay: #db6a40;
+  --accent-gold: #e2c054;
+  --card-bg: #101713;
+  --card-border: rgba(40, 122, 74, 0.15);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for white theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
