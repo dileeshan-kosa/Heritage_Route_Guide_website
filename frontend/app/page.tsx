@@ -101,7 +101,7 @@ export default function Home() {
     return () => {
       observerRef.current?.disconnect();
     };
-  }, []);
+  }, [towns]);
 
   // Smooth scroll to selected town from map node click
   const handleTownSelect = (townId: string) => {
